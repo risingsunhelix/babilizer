@@ -1,0 +1,64 @@
+.c-text{
+  @include fontInformation($size:20px)
+}
+.c-text--white{
+  @include fontInformation($color:rgba(255,255,255,0.8))
+}
+.c-text--title{
+  font-size: 80px;
+}
+.c-text--message{
+  font-size: 32px;
+}
+.c-text--discription{
+  font-size: 18px;
+}
+.c-text--subtitle{
+  position:relative;
+  width:150px;
+}
+.c-text--subtitle::before{
+  @include fontInformation($size:12px)
+  position: absolute;
+  top: -20px;
+  right: 60px;
+  color: rgba(158, 156, 150, 0.8);
+  text-align: center;
+}
+.c-text--voice::before{
+  content:"-声-";
+
+}
+.c-text--rate::before{
+  content:"-速さ-";
+}
+.c-text--pitch::before{
+  content:"-高さ-";
+}
+.c-text--copyright{
+  font-size: 12px;
+}
+
+@media (max-width:$sm){
+  .c-text{
+    @include fontInformation($size:16px)
+  }
+  .c-text--subtitle{
+    position:relative;
+    width:100px;
+  }
+  .c-text--subtitle::before{
+    top: -20px;
+    right: 35px;
+    font-size:9px;
+  }
+  .c-text--title{
+    font-size: 32px;
+  }
+  .c-text--message{
+    font-size: 18px;
+  }
+  .c-text--discription{
+    font-size: 12px;
+  }
+}
