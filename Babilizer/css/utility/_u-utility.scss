@@ -1,0 +1,96 @@
+.u-container{
+  padding:0 5vw;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  max-width: $xl;
+}
+@media (min-width:$xl){
+  .container{
+    padding:0 calc(0.05*$xl);
+  }
+}
+.u-hover--black:hover{
+  background-color: rgba(0,0,0,0.5);
+  transition: 1s;
+}
+.u-bg--white{
+  background-color: white;
+}
+
+
+
+
+
+
+@include paddingAndMarginMax()
+@include alignMax()
+@include displayMax()
+@include zIndexMax()
+@include heightMax()
+@include widthMax()
+
+@media (max-width:$xl){
+  @include paddingAndMargin(xl)
+  @include align(xl)
+  @include display(xl)
+  @include zIndex(xl)
+  @include height(xl)
+  @include width(xl)
+}
+@media (max-width:$lg){
+  @include paddingAndMargin(lg)
+  @include align(lg)
+  @include display(lg)
+  @include zIndex(lg)
+  @include height(lg)
+  @include width(lg)
+}
+@media (max-width:$md){
+  @include paddingAndMargin(md)
+  @include align(md)
+  @include display(md)
+  @include zIndex(md)
+  @include height(md)
+  @include width(md)
+}
+@media (max-width:$sm){
+  @include paddingAndMargin(sm)
+  @include align(sm)
+  @include display(sm)
+  @include zIndex(sm)
+  @include height(sm)
+  @include width(sm)
+}
+@media (max-width:$xs){
+  @include paddingAndMargin(xs)
+  @include align(xs)
+  @include display(xs)
+  @include zIndex(xs)
+  @include height(xs)
+  @include width(xs)
+}
+.u-filter--white50{
+  background-color: rgba(255,255,255,0.5)
+}
+.u-filter--white70{
+  background-color: rgba(255,255,255,0.7)
+}
+.u-filter--black20{
+  background-color: rgba(0,0,0,0.2);
+  height:100%;
+}
+.u-filter--black40{
+  background-color: rgba(0,0,0,0.4);
+  height:100%;
+}
+.u-filter--black60{
+  background-color: rgba(0,0,0,0.4);
+  height:100%;
+}
+.u-cursor--pointer{
+  cursor: pointer;
+}
+.u-textShadow--white{
+  @include txtShadow($x:3px, $y:3px, $blur:5px, $r:255, $g:255, $b:255, $a:0.4)
+}
