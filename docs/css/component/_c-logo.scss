@@ -1,0 +1,9 @@
+.c-logo{
+  width:120px;
+}
+
+@media (max-width:$sm){
+  .c-logo{
+    width:85px;
+  }
+}
