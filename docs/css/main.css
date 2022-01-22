@@ -314,6 +314,7 @@ ul {
   width: 500px;
   border-radius: 5px;
   border: 0.5px solid rgba(0, 0, 0, 0.8);
+  height: 30px;
 }
 
 @media (max-width: 414px) {
