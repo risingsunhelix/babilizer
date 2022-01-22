@@ -320,6 +320,7 @@ ul {
 @media (max-width: 414px) {
   .c-input {
     width: 324px;
+    height: 30px;
   }
 }
 
