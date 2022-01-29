@@ -38,7 +38,7 @@
               <h1 class="c-text--white c-text--title">Babilizer</h1>
               <h2 class="c-text--white c-text--message u-mt--190 u-sm-mt--150">さあ、バビ語の世界に行こう！</h2>
               <p class="c-text--white c-text--discription u-mt--40 u-sm-mt--20">日本語を入力するだけで瞬時にバビ語が音読されます。</p>
-              <p class="c-text--white c-text--discription u-mt--20 u-sm-mt--10">声の種類や高さ、読むスピードを自由に調整可能。</p>
+              <p class="c-text--white c-text--discription u-mt--20 u-sm-mt--10">読むスピードや声の高さを自由に調整可能。</p>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
         <div class="u-container">
           <div class="p-maincontents u-pt--50 u-dp--ib">
             <div class="p-maincontents--input">
-              <input class="c-input js-input u-tx-center" type="text" id="js-text"  rows="5" cols="50" name="text"  placeholder="ひらがなで入力してね" pattern="[\u3041-\u3096]" value="にじもがんばってね"/>
+              <input class="c-input js-input u-tx-center" type="text" id="js-text"  rows="5" cols="50" name="text"  placeholder="ひらがなorカタカナで入力してね" pattern="[\u3041-\u3096]" value="オボミビクブロボンブニビキビオボツブケベテベネベ"/>
             </div>
             <div class="p-maincontents--setting u-mtb--50">
 
@@ -71,10 +71,13 @@
 
             </div>
             <div class="p-maincontents--converter u-mtb--40">
-              <button class="c-button c-text--white" id="js-button">ヘベンブカバンブ -変換-</button>
+              <button class="c-button c-text--white" id="js-button--japToBabi">日本語→バビ</button>
+            </div>
+            <div class="p-maincontents--converter u-mtb--40">
+              <button class="c-button c-text--white" id="js-button--babiToJap">ババビビ→ニビホボンブゴボ</button>
             </div>
             <div class="p-maincontents--output u-mtb--40">
-              <output class="c-output"></output>
+              <p class="c-output TextTyping"></p>
             </div>
           </div>
         </div>
@@ -83,12 +86,27 @@
   <footer class="l-footer u-pt--25">
 
       <div class="u-container">
-        <p class="c-text--white c-text--copyright">
-          ©︎2022 Babilizer. All Rights Reserved.
-        </p>
+        <div class="p-footer u-dp--flex">
+          <div class="p-footer--left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button u-dp--ib" data-url="https://risingsunhelix.github.io/babilizer/" data-hashtags="#babilizer" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Frisingsunhelix.github.io%2Fbabilizer%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" class="facebook-share-button u-dp--ib" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div>
+            <p class="c-text--white c-text--copyright">
+              ©︎2022 Babilizer. All Rights Reserved.
+            </p>
+          </div>
+
+
+        </div>
       </div>
 
+
+
   </footer>
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="top.js" charset="utf-8"></script>
+
 </body>
 </html>

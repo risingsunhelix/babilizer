@@ -1,6 +1,13 @@
 .p-header{
   vertical-align: middle;
 }
+.p-footer{
+  justify-content: space-between;
+}
+.p-footer--left{
+  position:relative;
+  text-align: right;
+}
 .p-title{
   text-align: left;
 }

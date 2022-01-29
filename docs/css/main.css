@@ -162,6 +162,15 @@ ul {
   vertical-align: middle;
 }
 
+.p-footer {
+  justify-content: space-between;
+}
+
+.p-footer--left {
+  position: relative;
+  text-align: right;
+}
+
 .p-title {
   text-align: left;
 }
@@ -336,7 +345,26 @@ ul {
 
 .c-output {
   width: 500px;
-  height: 200px;
+  height: 30px;
+}
+
+.TextTyping span {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .c-button {
@@ -358,6 +386,16 @@ ul {
     height: 35px;
     font-size: 14px;
   }
+}
+
+.twitter-share-button {
+  vertical-align: baseline !important;
+  position: relative !important;
+  top: -15px !important;
+}
+
+.facebook-share-button {
+  vertical-align: baseline !important;
 }
 
 .u-container {
