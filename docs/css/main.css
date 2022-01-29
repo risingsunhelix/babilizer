@@ -158,6 +158,12 @@ ul {
   height: 65px;
 }
 
+@media (max-width: 414px) {
+  .l-footer {
+    height: 100px;
+  }
+}
+
 .p-header {
   vertical-align: middle;
 }
@@ -195,6 +201,9 @@ ul {
 @media (max-width: 414px) {
   .p-header {
     text-align: center;
+  }
+  .p-footer {
+    flex-direction: column;
   }
   .p-title {
     text-align: center;
@@ -341,11 +350,6 @@ ul {
   .c-bar {
     width: 200px;
   }
-}
-
-.c-output {
-  width: 500px;
-  height: 30px;
 }
 
 .TextTyping span {
